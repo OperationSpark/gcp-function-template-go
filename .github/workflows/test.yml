@@ -1,6 +1,8 @@
-name: CI
+name: Test
 
 on:
+  # Other workflows can depend on this workflow by using the `workflow_run` event
+  workflow_call:
   pull_request:
     branches:
       - main
